@@ -28,7 +28,9 @@
    
   </head>
 <body>
-<?php  $session = \Config\Services::session();?>
+<?php  $session = \Config\Services::session();
+ 
+?>
 <!-- Header End====================================================================== -->
 <div id="mainBody">
 	<div class="container">

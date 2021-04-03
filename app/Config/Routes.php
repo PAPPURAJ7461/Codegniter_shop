@@ -34,8 +34,18 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('admin/login', 'AdminController::index');
+$routes->get('admin/register', 'AdminController::signup');
 $routes->Post('admin/auth', 'AdminController::auth');
 $routes->get('admin/dashboard', 'AdminController::dashboard');
+$routes->get('admin/logout', 'AdminController::logout');
+$routes->get('product_details', 'Home::product_details');
+$routes->get('admin/add_product', 'ProductController::add_product');
+$routes->post('admin/save_product', 'ProductController::save_product');
+$routes->get('admin/product_list', 'ProductController::product_list');
+$routes->get('admin/product_view', 'ProductController::product_view');
+$routes->get('admin/edit_product', 'ProductController::edit_product');
+$routes->Post('admin/update_product', 'ProductController::update');
+$routes->get('admin/delete', 'ProductController::delete');
 
 /*
  * --------------------------------------------------------------------
